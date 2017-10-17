@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="halocash_plugin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libhhyk_sdk/libs/halocash_plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Aven\Demo\hhyk_sdk\libhhyk_sdk\build\intermediates\bundles\default\libs\halocash_order.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86f3ef96b12c07241947d1d938c212043855e0f0">
+        <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\8\halocash_order_1efdf1bc8865e1c223857178aec5da3a5a88805b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ccf3f69f7cc4b4819a033a1a95cbf9c33fd14247\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Aven\Demo\hhyk_sdk\libhhyk_sdk\build\intermediates\bundles\default\libs\halocash_plugin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ca4b6e57c7557e7462c0bfc3a484025635bafa1">
+        <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\8\halocash_plugin_fadb5ba3599d87f3d6682b230da77f11fd612e53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="63698a6cdd0eaa24423dbdf84292fbf86fefe402">
+        <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_429d19deedd1b9999277efc89fc299a00fc49e60\classes.dex" />
+    </item>
+
+</items>

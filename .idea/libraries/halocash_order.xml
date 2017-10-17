@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="halocash_order">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libhhyk_sdk/libs/halocash_order.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
