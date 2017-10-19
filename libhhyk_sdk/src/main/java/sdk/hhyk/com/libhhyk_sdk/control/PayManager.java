@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
-import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,16 +18,12 @@ import org.json.JSONObject;
 
 import java.net.URLDecoder;
 import java.util.UUID;
-import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import sdk.hhyk.com.libhhyk_sdk.PayConfig;
 import sdk.hhyk.com.libhhyk_sdk.callback.PayCallback;
 import sdk.hhyk.com.libhhyk_sdk.callback.PayListener;
-import sdk.hhyk.com.libhhyk_sdk.entity.OrderModel;
-import sdk.hhyk.com.libhhyk_sdk.entity.PayResult;
-import sdk.hhyk.com.libhhyk_sdk.entity.UrlEntity;
 import sdk.hhyk.com.libhhyk_sdk.http.OkHttpClientManager;
 import sdk.hhyk.com.libhhyk_sdk.view.DtDialog;
 import sdk.hhyk.com.libhhyk_sdk.view.ProgressDialog;

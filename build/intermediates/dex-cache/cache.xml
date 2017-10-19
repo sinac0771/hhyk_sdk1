@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ccf3f69f7cc4b4819a033a1a95cbf9c33fd14247\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\Aven\Demo\hhyk_sdk\libhhyk_sdk\build\intermediates\bundles\default\libs\halocash_plugin.jar"
         jumboMode="true"
         optimize="true"
@@ -34,8 +25,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="63698a6cdd0eaa24423dbdf84292fbf86fefe402">
+        sha1="e8b49a7900dd3fb6b125b995ec4d405f394c370f">
         <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_429d19deedd1b9999277efc89fc299a00fc49e60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="E:\Aven\Demo\hhyk_sdk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ccf3f69f7cc4b4819a033a1a95cbf9c33fd14247\classes.dex" />
     </item>
 
 </items>

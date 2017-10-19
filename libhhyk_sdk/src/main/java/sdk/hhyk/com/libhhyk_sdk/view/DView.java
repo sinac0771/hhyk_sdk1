@@ -69,15 +69,13 @@ public class DView extends FrameLayout {
 
 
     try {
-//	transdata={"transid":"123456","outtradeno":"111111","country":"US,USD,EN","backurl":"http://www.xxxx.com/callback.php"}
         JSONObject jsonObject=new JSONObject();
         jsonObject.put("transid",transid);
         jsonObject.put("outtradeno",orderID);
         jsonObject.put("backurl", PayConfig.NOTIFY_URL);
         jsonObject.put("country","US");
         String data= jsonObject.toString();
-//					"transid="+transid+"outtradeno="+orderID+"backurl="+PayConfig.NOTIFY_URL;
-        String sign="transdata=" + URLEncoder.encode(data);
+        String sign="transdata=" + URLEncoder.encode(data,"UTF-8");
 
         mDWebView.loadUrl(PayConfig.URL_PAYAPI_WEB+"?"+sign);
     } catch (Exception e) {
@@ -110,23 +108,6 @@ public class DView extends FrameLayout {
         FrameLayout.LayoutParams closeLayParams = new FrameLayout.LayoutParams(
 				/*mWidth*/-1, /*mHeight*/-1);
         mCloseLay.setLayoutParams(closeLayParams);
-//        mTvExit = new TextView(context);
-//        mTvExit.setTag("left");
-//        mTvExit.setVisibility(View.GONE);
-//        mTvExit.setBackgroundColor(0x9f333333);
-//
-//        FrameLayout.LayoutParams closeLeftBtnLp = new FrameLayout.LayoutParams(
-//                FrameLayout.LayoutParams.WRAP_CONTENT,
-//                FrameLayout.LayoutParams.WRAP_CONTENT);
-//        closeLeftBtnLp.gravity = Gravity.LEFT | Gravity.TOP;
-//        mTvExit.setLayoutParams(closeLeftBtnLp);
-//        mTvExit.setGravity(Gravity.CENTER);
-//        mTvExit.setMinWidth(Utils.dip2px(getContext(), 30));
-//        mTvExit.setMinHeight(Utils.dip2px(getContext(), 20));
-//        mTvExit.setTextColor(0xffffffff);
-//        mTvExit.setPadding(2, 2, 2, 2);
-//        mTvExit.setVisibility(View.GONE);
-//        mCloseLay.addView(mTvExit);
 
         mIvExit = new ImageView(context);
         mIvExit.setTag("right");

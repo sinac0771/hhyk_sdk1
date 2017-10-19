@@ -9,7 +9,6 @@ import com.halocash.lib.interfaces.HaloCashPay;
 import sdk.hhyk.com.libhhyk_sdk.PayConfig;
 import sdk.hhyk.com.libhhyk_sdk.callback.PayListener;
 import sdk.hhyk.com.libhhyk_sdk.control.PayManager;
-import sdk.hhyk.com.libhhyk_sdk.entity.OrderModel;
 import sdk.hhyk.com.libhhyk_sdk.view.DtDialog;
 
 
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mPayManager=PayManager.instance(MainActivity.this);
-        HaloCashPay.init(this, PayConfig.MERCHANT_ID);
+//        HaloCashPay.init(this, PayConfig.MERCHANT_ID);
 
         findViewById(R.id.tv_text).setOnClickListener(new View.OnClickListener() {
             @Override

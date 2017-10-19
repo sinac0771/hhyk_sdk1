@@ -11,12 +11,10 @@ import com.google.gson.Gson;
 import com.google.gson.internal.$Gson$Types;
 import com.halocash.volley.SSLSocketFactoryCompat;
 
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.net.URLDecoder;
 import java.security.cert.CertificateException;
 import java.util.Map;
 import java.util.Set;
@@ -315,11 +313,6 @@ private OkHttpClientManager(){
                         Log.d(OkHttpClientManager.class.getSimpleName(), "response:" + orderData + "response result = " + response.isSuccessful());
 
                         if (orderData.contains("code")) {
-//                            Log.e(OkHttpClientManager.class.getSimpleName(),"create transid error:"+orderData);
-//                            Message msg = myHandler.obtainMessage();
-//                            msg.what = CREATE_ORDER_FAIL;
-//                            msg.obj = orderData;
-//                            myHandler.sendMessage(msg);
                             if (callback!=null){
                                 callback.onFailure(orderData);
                             }
@@ -327,21 +320,6 @@ private OkHttpClientManager(){
                             if (callback!=null){
                                 callback.onPaySuccess(orderData);
                             }
-//                            boolean isSignSuc = signCpPaySuccessInfo(orderData);
-//                            if (isSignSuc) {
-//                                orderData = URLDecoder.decode(orderData, "utf-8");
-//                                String[] orderArray = orderData.split("&");
-//                                int length = "transdata=".length();
-//                                String transdata = orderArray[0].substring(length);
-//                                JSONObject obj = new JSONObject(transdata);
-//                                String transid = obj.getString("transid");
-//                                Message msg = myHandler.obtainMessage();
-//                                msg.what = CREATE_ORDER_SUCCESS;
-//                                msg.obj = transid;
-//                                myHandler.sendMessage(msg);
-//                            } else {
-//                                Log.e(OkHttpClientManager.class.getSimpleName(),"sign fail");
-//                            }
                         }
                     } else {
                         Log.e(OkHttpClientManager.class.getSimpleName(), "response failure");

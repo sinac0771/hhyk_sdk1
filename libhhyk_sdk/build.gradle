@@ -20,11 +20,31 @@ android {
         }
     }
 }
+
+task makeJar(type: Copy) {
+    delete 'build/libs/mysdk.jar'
+    from('build/intermediates/bundles/default/')
+    into('build/libs/')
+    include('libs/halocash_order.jar')
+    include('libs/halocash_plugin.jar')
+    include('classes.jar')
+    rename ('classes.jar', 'myjar.jar')
+}
+
+makeJar.dependsOn(build)
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
 repositories{
     flatDir{
         dirs 'libs'
     }
 }
+
+
+
 dependencies {
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
